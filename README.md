@@ -1,4 +1,4 @@
-Title: Scientific Article Search Engine (arXiv)
+#Scientific Article Search Engine (arXiv)
 This project implements a comprehensive Information Retrieval (IR) system in Python. It applies the Vector Space Model to a corpus of scientific articles (Physics, Computer Science, Mathematics).
 Key Features:
 Manual implementation of an Inverted Index.
