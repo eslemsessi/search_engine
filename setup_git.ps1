@@ -1,4 +1,4 @@
-Write-Host "🚀 STARTING SETUP..." -ForegroundColor Green
+Write-Host " STARTING SETUP..." -ForegroundColor Green
 
 # 1. Create requirements.txt
 "pandas`nmatplotlib`nscikit-learn`nnltk`nnumpy" | Set-Content requirements.txt -Encoding UTF8
@@ -17,7 +17,7 @@ git commit -m "Complete Project Upload"
 
 # 5. Ask for URL
 Write-Host "----------------------------------------------------" -ForegroundColor Yellow
-Write-Host "⚠️  PASTE YOUR GITHUB URL BELOW AND PRESS ENTER:" -ForegroundColor Yellow
+Write-Host "  PASTE YOUR GITHUB URL BELOW AND PRESS ENTER:" -ForegroundColor Yellow
 Write-Host "----------------------------------------------------" -ForegroundColor Yellow
 $RepoUrl = Read-Host "Paste URL here"
 
@@ -26,7 +26,7 @@ if ($RepoUrl) {
     git remote remove origin 2>$null
     git remote add origin $RepoUrl
     git push -u origin main
-    Write-Host "✅ SUCCESS! Check your GitHub page." -ForegroundColor Green
+    Write-Host " 🗸 SUCCESS! Check your GitHub page." -ForegroundColor Green
 } else {
-    Write-Host "❌ No URL provided. Files saved locally but not pushed." -ForegroundColor Red
+    Write-Host "❗ No URL provided. Files saved locally but not pushed." -ForegroundColor Red
 }
